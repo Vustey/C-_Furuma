@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/DTU/C++/Furuma_Official/cmake-build-debug",
-		"source" : "E:/DTU/C++/Furuma_Official"
+		"build" : "E:/DTU/Git_Furuma/C-_Furuma/Furuma_Official/cmake-build-debug",
+		"source" : "E:/DTU/Git_Furuma/C-_Furuma/Furuma_Official"
 	},
 	"version" : 
 	{
