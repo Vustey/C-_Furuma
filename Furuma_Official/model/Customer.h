@@ -9,6 +9,15 @@
 
 
 class Customer: public Person, public error_code {
+public:
+    const string &getTypeCustomer() const;
+
+    void setTypeCustomer(const string &typeCustomer);
+
+    const string &getAddress() const;
+
+    void setAddress(const string &address);
+
 private:
     string typeCustomer;
     string address;

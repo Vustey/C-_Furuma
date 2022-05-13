@@ -18,3 +18,19 @@ void House::output() {
         <<rentalPrice<<" "<<"rentalMaxPeople:"<<rentalMaxPeople<<" "<<"styleRental:"<<styleRental<<" "<<"standarHouse:"
         <<standarHouse<<" "<<"floor"<<floor<<"}"<<endl;
 }
+
+const string &House::getStandarHouse() const {
+    return standarHouse;
+}
+
+void House::setStandarHouse(const string &standarHouse) {
+    House::standarHouse = standarHouse;
+}
+
+int House::getFloor() const {
+    return floor;
+}
+
+void House::setFloor(int floor) {
+    House::floor = floor;
+}

@@ -8,6 +8,20 @@
 
 
 class Villa : public Facility{
+
+public:
+    const string &getStandarVilla() const;
+
+    void setStandarVilla(const string &standarVilla);
+
+    double getAreaPool() const;
+
+    void setAreaPool(double areaPool);
+
+    int getFloor() const;
+
+    void setFloor(int floor);
+
 private:
     string standarVilla;
     double areaPool;

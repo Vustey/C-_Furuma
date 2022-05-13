@@ -14,11 +14,14 @@ void EmployeeManagement::employeeMenu() {
         cout<<"4.Exit."<<endl;
         cout<<"Enter your choice:";
         cin>>choice;
+        cin.ignore();
         switch (choice){
             case 1:{
+                EmployeeService().displayEmployee();
                 break;
             }
             case 2:{
+                EmployeeService().createEmployee();
                 break;
             }
             case 3:{

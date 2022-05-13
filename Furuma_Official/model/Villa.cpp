@@ -18,3 +18,27 @@ void Villa::output() {
         <<rentalPrice<<" "<<"rentalMaxPeople:"<<rentalMaxPeople<<" "<<"styleRental:"<<styleRental<<"standarVilla:"<<standarVilla<<" "
         <<"areaPool:"<<areaPool<<" "<<"floor:"<<floor<<"}"<<endl;
 }
+
+const string &Villa::getStandarVilla() const {
+    return standarVilla;
+}
+
+void Villa::setStandarVilla(const string &standarVilla) {
+    Villa::standarVilla = standarVilla;
+}
+
+double Villa::getAreaPool() const {
+    return areaPool;
+}
+
+void Villa::setAreaPool(double areaPool) {
+    Villa::areaPool = areaPool;
+}
+
+int Villa::getFloor() const {
+    return floor;
+}
+
+void Villa::setFloor(int floor) {
+    Villa::floor = floor;
+}

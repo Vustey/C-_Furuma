@@ -8,6 +8,11 @@
 
 
 class Room : public Facility{
+public:
+    const string &getFreeService() const;
+
+    void setFreeService(const string &freeService);
+
 private:
     string freeService;
 public:

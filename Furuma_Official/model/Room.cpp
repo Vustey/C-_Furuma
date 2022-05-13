@@ -18,3 +18,11 @@ void Room::output() {
         <<rentalPrice<<" "<<"rentalMaxPeople:"<<rentalMaxPeople<<" "<<"styleRental:"<<styleRental<<" "<<"freeService:"
         <<freeService<<"}"<<endl;
 }
+
+const string &Room::getFreeService() const {
+    return freeService;
+}
+
+void Room::setFreeService(const string &freeService) {
+    Room::freeService = freeService;
+}

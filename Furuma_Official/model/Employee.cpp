@@ -19,3 +19,27 @@ void Employee::output() {
         <<" "<<"sex:"<<sex<<" "<<"idPerson"<<idPerson<<" "<<"phoneNumber:"<<phoneNumber<<" "<<"emailAddress:"<<emailAddress<<" "<<"level:"<<level
         <<"position:"<<position<<" "<<"salary:"<<salary<<"}"<<endl;
 }
+
+const string &Employee::getLevel() const {
+    return level;
+}
+
+void Employee::setLevel(const string &level) {
+    Employee::level = level;
+}
+
+const string &Employee::getPosition() const {
+    return position;
+}
+
+void Employee::setPosition(const string &position) {
+    Employee::position = position;
+}
+
+float Employee::getSalary() const {
+    return salary;
+}
+
+void Employee::setSalary(float salary) {
+    Employee::salary = salary;
+}

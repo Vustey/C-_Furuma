@@ -16,9 +16,11 @@ void CustomerManagement::customerMenu()  {
         cin>>choice;
         switch (choice){
             case 1:{
+                CustomerService().displayCustomer();
                 break;
             }
             case 2:{
+                CustomerService().createCustomer();
                 break;
             }
             case 3:{

@@ -19,3 +19,19 @@ void Customer::output() {
         <<" "<<"sex:"<<sex<<" "<<"idPerson"<<idPerson<<" "<<"phoneNumber:"<<phoneNumber<<" "<<"emailAddress:"<<emailAddress<<" "<<"typeCustomer:"<<typeCustomer
         <<"address:"<<address<<"}"<<endl;
 }
+
+const string &Customer::getTypeCustomer() const {
+    return typeCustomer;
+}
+
+void Customer::setTypeCustomer(const string &typeCustomer) {
+    Customer::typeCustomer = typeCustomer;
+}
+
+const string &Customer::getAddress() const {
+    return address;
+}
+
+void Customer::setAddress(const string &address) {
+    Customer::address = address;
+}

@@ -9,6 +9,27 @@
 
 
 class Booking {
+public:
+    const Facility &getFacility() const;
+
+    void setFacility(const Facility &facility);
+
+    const Customer &getIdBooking() const;
+
+    void setIdBooking(const Customer &idBooking);
+
+    const string &getStartDate() const;
+
+    void setStartDate(const string &startDate);
+
+    const string &getEndDate() const;
+
+    void setEndDate(const string &endDate);
+
+    const Customer &getCustomer() const;
+
+    void setCustomer(const Customer &customer);
+
 private:
     Facility facility;
     Customer idBooking;

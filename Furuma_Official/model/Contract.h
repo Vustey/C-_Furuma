@@ -9,6 +9,27 @@
 
 
 class Contract {
+public:
+    const Booking &getBooking() const;
+
+    void setBooking(const Booking &booking);
+
+    const Customer &getCustomer() const;
+
+    void setCustomer(const Customer &customer);
+
+    const string &getIdContract() const;
+
+    void setIdContract(const string &idContract);
+
+    double getPrePayment() const;
+
+    void setPrePayment(double prePayment);
+
+    double getTotalPayment() const;
+
+    void setTotalPayment(double totalPayment);
+
 private:
     Booking booking;
     Customer customer;

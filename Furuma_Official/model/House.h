@@ -8,6 +8,15 @@
 
 
 class House : public Facility{
+public:
+    const string &getStandarHouse() const;
+
+    void setStandarHouse(const string &standarHouse);
+
+    int getFloor() const;
+
+    void setFloor(int floor);
+
 private:
     string standarHouse;
     int floor;

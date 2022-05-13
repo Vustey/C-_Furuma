@@ -8,6 +8,19 @@
 
 
 class Employee: public Person{
+public:
+    const string &getLevel() const;
+
+    void setLevel(const string &level);
+
+    const string &getPosition() const;
+
+    void setPosition(const string &position);
+
+    float getSalary() const;
+
+    void setSalary(float salary);
+
 private:
     string level;
     string position;
