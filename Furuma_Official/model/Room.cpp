@@ -14,8 +14,8 @@ Room::Room() {
 }
 
 void Room::output() {
-    cout<<"Room{idFacility:"<<idFacility<<" "<<"nameService:"<<nameService<<" "<<"areaUse:"<<areaUse<<" "<<"rentalPrice:"
-        <<rentalPrice<<" "<<"rentalMaxPeople:"<<rentalMaxPeople<<" "<<"styleRental:"<<styleRental<<" "<<"freeService:"
+    cout<<"Room{idFacility:"<<idFacility<<","<<"nameService:"<<nameService<<","<<"areaUse:"<<areaUse<<","<<"rentalPrice:"
+        <<rentalPrice<<","<<"rentalMaxPeople:"<<rentalMaxPeople<<","<<"styleRental:"<<styleRental<<","<<"freeService:"
         <<freeService<<"}"<<endl;
 }
 

@@ -20,8 +20,8 @@ Person::Person() {
 }
 
 void Person::output() {
-    cout<<"Person{idCode:"<<idCode<<" "<<"namePerson:"<<namePerson<<" "<<"dateOfBirth:"<<dateOfBirth
-    <<" "<<"sex:"<<sex<<" "<<"idPerson"<<idPerson<<" "<<"phoneNumber:"<<phoneNumber<<" "<<"emailAddress:"<<emailAddress<<"}"
+    cout<<"Person{idCode:"<<idCode<<","<<"namePerson:"<<namePerson<<","<<"dateOfBirth:"<<dateOfBirth
+    <<","<<"sex:"<<sex<<","<<"idPerson"<<idPerson<<","<<"phoneNumber:"<<phoneNumber<<","<<"emailAddress:"<<emailAddress<<"}"
     <<endl;
 }
 

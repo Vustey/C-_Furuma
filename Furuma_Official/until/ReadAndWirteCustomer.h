@@ -6,11 +6,11 @@
 #define FURUMA_OFFICIAL_READANDWIRTECUSTOMER_H
 #include "../model/Customer.h"
 #include<string>
-#include<list>
+#include<vector>
 class ReadAndWirteCustomer {
 public:
-    list<Customer>readAllcus(string path);
-    void writeAllcus(string path,list<Customer>c);
+    vector<Customer>readAllcus(string path);
+    void writeAllcus(string path,vector<Customer>c);
 };
 
 

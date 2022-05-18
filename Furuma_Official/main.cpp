@@ -6,17 +6,14 @@
 
 int main() {
 //    ReadAndWirteEmployee readAndWirteEmployee;
-//    list<Employee>list= readAndWirteEmployee.readAllemp("E:\\DTU\\Git_Furuma\\C-_Furuma\\Furuma_Official\\data\\Employee");
-//    for(Employee e : list){
+//    vector<Employee>vector= readAndWirteEmployee.readAllemp("E:\\DTU\\Git_Furuma\\C-_Furuma\\Furuma_Official\\data\\Employee");
+//    for(Employee e : vector){
 //        e.output();
 //    }
-//    readAndWirteEmployee.writeAllemp("E:\\DTU\\Git_Furuma\\C-_Furuma\\Furuma_Official\\data\\out",list);
+//    readAndWirteEmployee.writeAllemp("E:\\DTU\\Git_Furuma\\C-_Furuma\\Furuma_Official\\data\\out",vector);
 //
 //
 //
-
-//    Facility* fac;ility=new Room("12","VIP",21,43,9,"Cao","No");
-//    facility->output();
 FurumaController::displayFuruma();
 
     return 0;

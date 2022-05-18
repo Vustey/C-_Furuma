@@ -14,9 +14,9 @@ Villa::Villa() {
 }
 
 void Villa::output() {
-    cout<<"Villa{idFacility:"<<idFacility<<" "<<"nameService:"<<nameService<<" "<<"areaUse:"<<areaUse<<" "<<"rentalPrice:"
-        <<rentalPrice<<" "<<"rentalMaxPeople:"<<rentalMaxPeople<<" "<<"styleRental:"<<styleRental<<"standarVilla:"<<standarVilla<<" "
-        <<"areaPool:"<<areaPool<<" "<<"floor:"<<floor<<"}"<<endl;
+    cout<<"Villa{idFacility:"<<idFacility<<","<<"nameService:"<<nameService<<","<<"areaUse:"<<areaUse<<","<<"rentalPrice:"
+        <<rentalPrice<<","<<"rentalMaxPeople:"<<rentalMaxPeople<<","<<"styleRental:"<<styleRental<<"standarVilla:"<<standarVilla<<","
+        <<"areaPool:"<<areaPool<<","<<"floor:"<<floor<<"}"<<endl;
 }
 
 const string &Villa::getStandarVilla() const {

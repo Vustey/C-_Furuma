@@ -14,6 +14,7 @@ void CustomerManagement::customerMenu()  {
         cout<<"4.Exit."<<endl;
         cout<<"Enter your choice:";
         cin>>choice;
+        cin.ignore();
         switch (choice){
             case 1:{
                 CustomerService().displayCustomer();
@@ -24,6 +25,7 @@ void CustomerManagement::customerMenu()  {
                 break;
             }
             case 3:{
+                CustomerService().editCustomer();
                 break;
             }
             case 4:{

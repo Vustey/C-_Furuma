@@ -15,9 +15,9 @@ Employee::Employee() {
 }
 
 void Employee::output() {
-    cout<<"Employee{idCode:"<<idCode<<" "<<"namePerson:"<<namePerson<<" "<<"dateOfBirth:"<<dateOfBirth
-        <<" "<<"sex:"<<sex<<" "<<"idPerson"<<idPerson<<" "<<"phoneNumber:"<<phoneNumber<<" "<<"emailAddress:"<<emailAddress<<" "<<"level:"<<level
-        <<"position:"<<position<<" "<<"salary:"<<salary<<"}"<<endl;
+    cout<<"Employee{idCode:"<<idCode<<","<<"namePerson:"<<namePerson<<","<<"dateOfBirth:"<<dateOfBirth
+        <<","<<"sex:"<<sex<<","<<"idPerson"<<idPerson<<","<<"phoneNumber:"<<phoneNumber<<","<<
+        "emailAddress:"<<emailAddress<<","<<"level:"<<level<<","<<"position:"<<position<<","<<"salary:"<<salary<<"}"<<endl;
 }
 
 const string &Employee::getLevel() const {

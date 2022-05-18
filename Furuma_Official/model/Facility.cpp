@@ -15,8 +15,8 @@ Facility::Facility() {
 }
 
 void Facility::output() {
-    cout<<"Facility{idFacility:"<<idFacility<<" "<<"nameService:"<<nameService<<" "<<"areaUse:"<<areaUse<<" "<<"rentalPrice:"
-    <<rentalPrice<<" "<<"rentalMaxPeople:"<<rentalMaxPeople<<" "<<"styleRental:"<<styleRental<<"}"<<endl;
+    cout<<"Facility{idFacility:"<<idFacility<<","<<"nameService:"<<nameService<<","<<"areaUse:"<<areaUse<<","<<"rentalPrice:"
+    <<rentalPrice<<","<<"rentalMaxPeople:"<<rentalMaxPeople<<","<<"styleRental:"<<styleRental<<"}"<<endl;
 }
 
 const string &Facility::getIdFacility() const {

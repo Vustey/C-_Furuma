@@ -25,6 +25,7 @@ void EmployeeManagement::employeeMenu() {
                 break;
             }
             case 3:{
+                EmployeeService().editEmployee();
                 break;
             }
             case 4:{

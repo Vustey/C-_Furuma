@@ -51,3 +51,6 @@ double Contract::getTotalPayment() const {
 void Contract::setTotalPayment(double totalPayment) {
     Contract::totalPayment = totalPayment;
 }
+
+void Contract::output() {
+}

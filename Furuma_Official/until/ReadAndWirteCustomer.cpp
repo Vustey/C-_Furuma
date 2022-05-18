@@ -4,8 +4,8 @@
 
 #include "ReadAndWirteCustomer.h"
 #include<fstream>
-list<Customer> ReadAndWirteCustomer::readAllcus(string path) {
-    list<Customer>list;
+vector<Customer> ReadAndWirteCustomer::readAllcus(string path) {
+    vector<Customer>list;
     ifstream filein(path,ios_base::in);
     if(filein.is_open()){
         cout<<"Mo file thanh cong"<<endl;
@@ -18,7 +18,7 @@ list<Customer> ReadAndWirteCustomer::readAllcus(string path) {
             string idPerson;
             string phoneNumber;
             string emailAddress;
-            string typerCustomer;
+            string typeCustomer;
             string address;
             getline(filein,namePerson,',');
             getline(filein,dateOfBirth,',');
@@ -26,13 +26,12 @@ list<Customer> ReadAndWirteCustomer::readAllcus(string path) {
             getline(filein,idPerson,',');
             getline(filein,phoneNumber,',');
             getline(filein,emailAddress,',');
-            getline(filein,typerCustomer,',');
+            getline(filein,typeCustomer,',');
             getline(filein,address);
             if(filein.eof()){
                 break;
             }
-            filein.ignore();
-            Customer c(idCode,namePerson,dateOfBirth,sex,idPerson,phoneNumber,emailAddress,typerCustomer,address);
+            Customer c(idCode,namePerson,dateOfBirth,sex,idPerson,phoneNumber,emailAddress,typeCustomer,address);
             list.push_back(c);
         }
         filein.close();
@@ -42,13 +41,13 @@ list<Customer> ReadAndWirteCustomer::readAllcus(string path) {
     return list;
 }
 
-void ReadAndWirteCustomer::writeAllcus(string path, list<Customer> c) {
+void ReadAndWirteCustomer::writeAllcus(string path, vector<Customer> c) {
     ofstream fileout(path,ios_base::out);
     if(fileout.is_open()){
         cout<<"Ghi file thanh cong"<<endl;
         for (Customer c :c){
-            fileout<<c.getIdCode()<<","<<c.getNamePerson()<<","<<c.getDateOfBirth()<<","<<c.getSex()<<","
-            <<c.getPhoneNumber()<<","<<c.getEmailAddress()<<","<<c.getTypeCustomer()<<","<<c.getAddress()<<endl;
+            fileout<<c.getIdCode()<<","<<c.getNamePerson()<<","<<c.getDateOfBirth()<<","<<c.getSex()<<","<<c.getIdPerson()
+            <<","<<c.getPhoneNumber()<<","<<c.getEmailAddress()<<","<<c.getTypeCustomer()<<","<<c.getAddress()<<endl;
         }
         fileout.close();
     }else{

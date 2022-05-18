@@ -14,9 +14,9 @@ House::House() {
 }
 
 void House::output() {
-    cout<<"House{idFacility:"<<idFacility<<" "<<"nameService:"<<nameService<<" "<<"areaUse:"<<areaUse<<" "<<"rentalPrice:"
-        <<rentalPrice<<" "<<"rentalMaxPeople:"<<rentalMaxPeople<<" "<<"styleRental:"<<styleRental<<" "<<"standarHouse:"
-        <<standarHouse<<" "<<"floor"<<floor<<"}"<<endl;
+    cout<<"House{idFacility:"<<idFacility<<","<<"nameService:"<<nameService<<","<<"areaUse:"<<areaUse<<","<<"rentalPrice:"
+        <<rentalPrice<<","<<"rentalMaxPeople:"<<rentalMaxPeople<<","<<"styleRental:"<<styleRental<<","<<"standarHouse:"
+        <<standarHouse<<","<<"floor"<<floor<<"}"<<endl;
 }
 
 const string &House::getStandarHouse() const {

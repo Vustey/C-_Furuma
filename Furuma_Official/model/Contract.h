@@ -40,6 +40,7 @@ public:
     Contract(const Booking &booking, const Customer &customer, const string &idContract, double prePayment,
              double totalPayment);
     Contract();
+    void output();
 };
 
 

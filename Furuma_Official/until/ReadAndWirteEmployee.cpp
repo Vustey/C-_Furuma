@@ -1,7 +1,6 @@
 //
 // Created by vu tran on 13/05/2022.
 //
-
 #include <fstream>
 #include "ReadAndWirteEmployee.h"
 
@@ -42,7 +41,6 @@ list<Employee> ReadAndWirteEmployee::readAllemp(string path) {
         }else{
         cout<<"Mo file khong thanh cong"<<endl;
     }
-
     return list;
     }
 void ReadAndWirteEmployee::writeAllemp(string path, list<Employee>e) {

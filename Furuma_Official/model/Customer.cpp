@@ -15,8 +15,8 @@ Customer::Customer() {
 }
 
 void Customer::output() {
-    cout<<"Customer{idCode:"<<idCode<<" "<<"namePerson:"<<namePerson<<" "<<"dateOfBirth:"<<dateOfBirth
-        <<" "<<"sex:"<<sex<<" "<<"idPerson"<<idPerson<<" "<<"phoneNumber:"<<phoneNumber<<" "<<"emailAddress:"<<emailAddress<<" "<<"typeCustomer:"<<typeCustomer
+    cout<<"Customer{idCode:"<<idCode<<","<<"namePerson:"<<namePerson<<","<<"dateOfBirth:"<<dateOfBirth
+        <<","<<"sex:"<<sex<<","<<"idPerson"<<idPerson<<","<<"phoneNumber:"<<phoneNumber<<","<<"emailAddress:"<<emailAddress<<";"<<"typeCustomer:"<<typeCustomer
         <<"address:"<<address<<"}"<<endl;
 }
 
