@@ -12,6 +12,7 @@ Contract::Contract() {
 
 }
 
+
 const Booking &Contract::getBooking() const {
     return booking;
 }
@@ -50,7 +51,4 @@ double Contract::getTotalPayment() const {
 
 void Contract::setTotalPayment(double totalPayment) {
     Contract::totalPayment = totalPayment;
-}
-
-void Contract::output() {
 }

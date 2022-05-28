@@ -145,7 +145,7 @@ void EmployeeService::editEmployee() {
                     tmp->output();
                     cout<<"Edit position("<<tmp->getPosition()<<")"<<endl;
                     string changeposition;
-                    cout<<"level new:";
+                    cout<<"position new:";
                     getline(cin,changeposition);
                     tmp->setIdPerson(changeposition);
                     break;
@@ -154,7 +154,7 @@ void EmployeeService::editEmployee() {
                     tmp->output();
                     cout<<"Edit salary("<<tmp->getSalary()<<")"<<endl;
                     string changesalary;
-                    cout<<"level new:";
+                    cout<<"salary new:";
                     getline(cin,changesalary);
                     tmp->setIdPerson(changesalary);
                     break;

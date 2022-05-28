@@ -11,7 +11,7 @@
 class ReadAndWirteEmployee {
 public:
     list<Employee>readAllemp(string path);
-    void writeAllemp(string path,list<Employee>e);
+    void writeAllemp(string path,list<Employee> e);
 };
 
 

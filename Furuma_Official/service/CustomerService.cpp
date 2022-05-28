@@ -1,7 +1,6 @@
 //
 // Created by vu tran on 13/05/2022.
 //
-
 #include "CustomerService.h"
 #include "../until/ReadAndWirteCustomer.h"
 #include "../controller/CustomerManagement.h"
@@ -11,7 +10,6 @@ void CustomerService::displayCustomer() {
         c.output();
     }
 }
-
 void CustomerService::createCustomer() {
     vector = ReadAndWirteCustomer().readAllcus("E:\\DTU\\Git_Furuma\\C-_Furuma\\Furuma_Official\\data\\Customer");
     int n = vector.size();
@@ -44,13 +42,12 @@ void CustomerService::createCustomer() {
     vector.push_back(c);
     ReadAndWirteCustomer().writeAllcus("E:\\DTU\\Git_Furuma\\C-_Furuma\\Furuma_Official\\data\\Customer", vector);
 }
-
 void CustomerService::editCustomer() {
     CustomerService().displayCustomer();
     int n;
     cout<<"Enter id you want to change KH-000";
     cin>>n;
-    string id_customer="KH-000"+ to_string(n);
+    string id_customer="KH-000"+to_string(n);
     Customer *tmp;
     bool check = true;
     for(Customer &c : vector = ReadAndWirteCustomer().readAllcus("E:\\DTU\\Git_Furuma\\C-_Furuma\\Furuma_Official\\data\\Customer")){
@@ -135,7 +132,7 @@ void CustomerService::editCustomer() {
                     tmp->output();
                     cout<<"Edit typeCustomer("<<tmp->getTypeCustomer()<<")"<<endl;
                     string changetypeCustomer;
-                    cout<<"emailAddress new:";
+                    cout<<"Customer new:";
                     getline(cin,changetypeCustomer);
                     tmp->setIdPerson(changetypeCustomer);
                     break;
